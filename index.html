@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJUNGMUL | 마중물 글로벌 장학 플랫폼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .loop-animation { animation: rotate 20s linear infinite; }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <header class="fixed w-full z-50 glass-card text-white py-4 px-8 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"><i class="fas fa-tint text-white"></i></div>
+            <span class="text-xl font-bold tracking-tighter">MAJUNGMUL</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#vision" class="hover:text-blue-400">플랫폼 소개</a>
+            <a href="#dashboard" class="hover:text-blue-400">실시간 투명성</a>
+            <a href="#roadmap" class="hover:text-blue-400">로드맵</a>
+        </nav>
+        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-xs">MJM 앱 연결</button>
+    </header>
+
+    <section class="gradient-bg min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">인재의 가능성을 깨우는<br><span class="text-blue-400">단 한 방울의 마중물</span></h1>
+            <p class="text-slate-300 text-lg mb-10">블록체인 기반 성취 보상형 장학 생태계, MJM 토큰으로 교육의 국경을 허뭅니다.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-white text-blue-900 font-bold px-8 py-4 rounded-lg">백서 다운로드</button>
+                <button class="border border-blue-400 text-blue-400 px-8 py-4 rounded-lg">실시간 대시보드</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">실시간 투명성 지수</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="p-8 border rounded-2xl bg-slate-50">
+                    <p class="text-sm text-slate-500">재단 총 자산</p>
+                    <p class="text-3xl font-bold text-blue-900">$ 12,450,000.00</p>
+                </div>
+                <div class="p-8 border rounded-2xl bg-slate-50">
+                    <p class="text-sm text-slate-500">누적 집행액</p>
+                    <p class="text-3xl font-bold text-blue-600">4,500,000 MJM</p>
+                </div>
+                <div class="p-8 border rounded-2xl bg-slate-50">
+                    <p class="text-sm text-slate-500">참여 대학</p>
+                    <p class="text-3xl font-bold text-blue-900">24개 기관</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
