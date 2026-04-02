@@ -3,61 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAJUNGMUL | 마중물 글로벌 장학 플랫폼</title>
+    <title>사단법인 마중물장학회 | 꿈을 여는 따뜻한 손길</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
-        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .loop-animation { animation: rotate 20s linear infinite; }
-        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        body { font-family: 'Pretendard', sans-serif; word-break: keep-all; }
+        .mjm-gradient { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+        .hero-text-gradient { background: linear-gradient(to right, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <header class="fixed w-full z-50 glass-card text-white py-4 px-8 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"><i class="fas fa-tint text-white"></i></div>
-            <span class="text-xl font-bold tracking-tighter">MAJUNGMUL</span>
+<body class="bg-white text-slate-800">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-md border-b border-blue-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-900 flex items-center gap-2">
+                <span class="text-2xl">💧</span> 마중물장학회
+            </h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">재단소개</a>
+                <a href="#vision" class="hover:text-blue-600 transition">핵심가치</a>
+                <a href="#support" class="hover:text-blue-600 transition">장학사업</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">후원문의</a>
+            </nav>
         </div>
-        <nav class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#vision" class="hover:text-blue-400">플랫폼 소개</a>
-            <a href="#dashboard" class="hover:text-blue-400">실시간 투명성</a>
-            <a href="#roadmap" class="hover:text-blue-400">로드맵</a>
-        </nav>
-        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full text-xs">MJM 앱 연결</button>
     </header>
 
-    <section class="gradient-bg min-h-screen flex items-center justify-center text-center px-6 pt-20">
-        <div class="max-w-4xl">
-            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">인재의 가능성을 깨우는<br><span class="text-blue-400">단 한 방울의 마중물</span></h1>
-            <p class="text-slate-300 text-lg mb-10">블록체인 기반 성취 보상형 장학 생태계, MJM 토큰으로 교육의 국경을 허뭅니다.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <button class="bg-white text-blue-900 font-bold px-8 py-4 rounded-lg">백서 다운로드</button>
-                <button class="border border-blue-400 text-blue-400 px-8 py-4 rounded-lg">실시간 대시보드</button>
+    <section class="mjm-gradient pt-48 pb-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
+            <div>
+                <span class="inline-block px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold mb-6">사단법인 마중물장학회</span>
+                <h2 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight hero-text-gradient">
+                    한 방울의 물이<br>바다를 이룹니다
+                </h2>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed font-light">
+                    마중물장학회는 전 세계 소외된 인재들이<br> 
+                    경제적 제약 없이 꿈을 펼칠 수 있도록 돕는 든든한 버팀목입니다.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#support" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all">장학 제도 보기</a>
+                    <a href="#about" class="bg-white text-blue-600 border border-blue-200 px-8 py-4 rounded-2xl font-bold hover:bg-blue-50 transition-all">재단 이야기</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white p-4 rounded-[2rem] shadow-2xl border border-blue-50">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Education" class="rounded-[1.5rem] w-full h-auto">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-blue-50">
+                        <p class="text-blue-600 font-bold text-2xl">1,200+</p>
+                        <p class="text-slate-500 text-sm">누적 장학생 지원</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="dashboard" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">실시간 투명성 지수</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div class="p-8 border rounded-2xl bg-slate-50">
-                    <p class="text-sm text-slate-500">재단 총 자산</p>
-                    <p class="text-3xl font-bold text-blue-900">$ 12,450,000.00</p>
-                </div>
-                <div class="p-8 border rounded-2xl bg-slate-50">
-                    <p class="text-sm text-slate-500">누적 집행액</p>
-                    <p class="text-3xl font-bold text-blue-600">4,500,000 MJM</p>
-                </div>
-                <div class="p-8 border rounded-2xl bg-slate-50">
-                    <p class="text-sm text-slate-500">참여 대학</p>
-                    <p class="text-3xl font-bold text-blue-900">24개 기관</p>
+    <section id="vision" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl font-bold text-slate-900">우리의 세 가지 약속</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-blue-50 rounded-3xl flex items-center justify-center text-4xl mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition-all">🤝</div>
+                <h4 class="text-xl font-bold mb-4">함께하는 동행</h4>
+                <p class="text-slate-500 leading-relaxed">단순한 경제적 지원을 넘어, 인재들이 올바른 가치관을 가지고 성장하도록 멘토가 되어줍니다.</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-blue-50 rounded-3xl flex items-center justify-center text-4xl mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition-all">💎</div>
+                <h4 class="text-xl font-bold mb-4">투명한 운영</h4>
+                <p class="text-slate-500 leading-relaxed">디지털 솔루션을 도입하여 기부금의 흐름을 투명하게 공시하고 신뢰를 최우선으로 합니다.</p>
+            </div>
+            <div class="text-center group">
+                <div class="w-20 h-20 bg-blue-50 rounded-3xl flex items-center justify-center text-4xl mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition-all">🌍</div>
+                <h4 class="text-xl font-bold mb-4">글로벌 네트워크</h4>
+                <p class="text-slate-500 leading-relaxed">베트남, 필리핀 등 동남아시아를 시작으로 전 세계로 장학 생태계를 확장하고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="py-24 bg-slate-50 px-6">
+        <div class="max-w-7xl mx-auto bg-white rounded-[3rem] p-12 md:p-20 shadow-sm border border-slate-100 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h3 class="text-3xl font-bold mb-6">여러분의 후원이<br><span class="text-blue-600">누군가의 미래</span>가 됩니다</h3>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    마중물장학회는 투명한 기부 문화를 위해 IT 기술 파트너 '프라이밍 솔루션'과 협력하여 모든 장학 프로세스를 디지털화하고 있습니다.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-3 font-medium text-slate-700">
+                        <span class="text-blue-500">✓</span> 정기 및 일시 후원 참여 가능
+                    </li>
+                    <li class="flex items-center gap-3 font-medium text-slate-700">
+                        <span class="text-blue-500">✓</span> 기부금 영수증 발행 및 세제 혜택
+                    </li>
+                </ul>
+                <a href="#contact" class="inline-block bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold hover:bg-black transition-all">후원 신청하기</a>
+            </div>
+            <div class="flex-1 bg-blue-600 rounded-[2.5rem] p-10 text-white">
+                <h4 class="text-2xl font-bold mb-6">핵심 사업 현황</h4>
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-blue-200 text-sm mb-1 uppercase tracking-wider">Scholarship Program</p>
+                        <p class="text-xl font-semibold">마중물 국내외 장학금 지원</p>
+                    </div>
+                    <div>
+                        <p class="text-blue-200 text-sm mb-1 uppercase tracking-wider">K-Culture Festival</p>
+                        <p class="text-xl font-semibold">글로벌 문화 교류 프로젝트</p>
+                    </div>
+                    <div class="pt-6 border-t border-blue-500">
+                        <p class="opacity-80 italic text-sm">"우리는 더 넓은 세상으로 나아갈 마중물을 붓습니다."</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer id="contact" class="bg-white py-20 px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-900 mb-6">마중물장학회</h2>
+                <p class="text-slate-500 leading-relaxed mb-4">
+                    인재 양성을 통해 더 나은 세상을 만드는<br>사단법인 마중물장학회입니다.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+                <div>
+                    <h5 class="font-bold mb-4">재단 정보</h5>
+                    <ul class="text-slate-500 space-y-2 text-sm">
+                        <li>📍 경기도 수원시</li>
+                        <li>📧 mjm@foundation.org</li>
+                        <li>📞 031-XXX-XXXX</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">기술 파트너</h5>
+                    <p class="text-slate-500 text-sm">Priming Solutions</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 text-slate-400 text-xs text-center">
+            © 2026 Majungmul Scholarship Foundation. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 </html>
